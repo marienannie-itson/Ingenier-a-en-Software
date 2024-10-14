@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidad 1 - Ingeniería en Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlaces a hojas de estilo y fuentes -->
+    <link rel="stylesheet" href="css/unidad1.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Fuente personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="logo">
+            <img src="img/ItsonLogo.png" alt="Logo ITSON">
+            Ingeniería en Software
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="unidad1.html" class="active">Unidad 1</a></li>
+            <li><a href="#">Unidad 2</a></li>
+            <li><a href="#">Unidad 3</a></li>
+            <li><a href="#">Videojuegos</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Sección de contenido principal -->
+    <main>
+        <!-- Hero con nuevo fondo animado -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Unidad 1</h1>
+                <p>Proyecto de Ingeniería de Software</p>
+            </div>
+            <!-- Canvas para el nuevo fondo animado -->
+            <canvas id="backgroundCanvas"></canvas>
+        </section>
+
+        <!-- Sección de contenido mejorado -->
+        <section class="content">
+            <div class="container">
+                <!-- Sección interactiva mejorada -->
+                <div class="interactive-section">
+                    <h2>Explora los Conceptos Clave</h2>
+                    <div class="grid">
+                        <!-- Tarjeta 1 -->
+                        <div class="card" data-content="concepto">
+                            <div class="card-front">
+                                <h3>Concepto de Ingeniería de Software</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    La ingeniería de software es una disciplina formada por un conjunto de métodos, herramientas y técnicas utilizadas en el desarrollo de programas informáticos.
+                                </p>
+                                <button class="btn-more" data-modal="conceptoModal">Leer más</button>
+                            </div>
+                        </div>
+                        <!-- Tarjeta 2 -->
+                        <div class="card" data-content="disciplina">
+                            <div class="card-front">
+                                <h3>Disciplina en el Campo de la Computación</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Aplica principios y técnicas de la informática, matemáticas y ingeniería para diseñar y mantener sistemas de software.
+                                </p>
+                                <button class="btn-more" data-modal="disciplinaModal">Leer más</button>
+                            </div>
+                        </div>
+                        <!-- Tarjeta 3 -->
+                        <div class="card" data-content="tendencias">
+                            <div class="card-front">
+                                <h3>Tendencias Actuales</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Descubre las tendencias más relevantes en la Ingeniería de Software.
+                                </p>
+                                <button class="btn-more" data-modal="tendenciasModal">Explorar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales para contenido adicional -->
+    <!-- Modal Concepto -->
+    <div id="conceptoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Concepto de Ingeniería de Software</h2>
+            <p>
+                La ingeniería de software es una disciplina formada por un conjunto de métodos, herramientas y técnicas que se utilizan en el desarrollo de los programas informáticos. Esta disciplina trasciende la actividad de programación, que es el pilar fundamental a la hora de crear una aplicación.
+            </p>
+            <p>
+                Dentro del ámbito de la ingeniería de software, es fundamental entender que el software no es un conjunto uniforme, sino que se puede clasificar en diversas categorías según su propósito y funcionalidad.
+            </p>
+            <p>
+                Las principales categorías de software incluyen el software de sistema, el software de aplicación y el software de programación. Cada uno de estos tipos desempeña un rol crucial en el ecosistema informático.
+            </p>
+            <p class="reference">
+                Fuente: <a href="https://definicion.de/ingenieria-de-software/" target="_blank">Definición.de - Ingeniería de Software</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal Disciplina -->
+    <div id="disciplinaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Disciplina de Ingeniería de Software en el Campo de la Computación</h2>
+            <p>
+                La ingeniería de software es un campo multidisciplinar que aplica principios y técnicas de la informática, las matemáticas y la ingeniería para diseñar, desarrollar y mantener sistemas de software.
+            </p>
+            <p>
+                En esencia, es el enfoque sistemático para construir soluciones de software de alta calidad que satisfagan los requisitos específicos del usuario.
+            </p>
+            <p class="reference">
+                Fuente: <a href="https://cultura-informatica.com/que-es-la-ingenieria-de-software/" target="_blank">Cultura Informática - ¿Qué es la Ingeniería de Software?</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal Tendencias -->
+    <div id="tendenciasModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Tendencias en la Ingeniería de Software</h2>
+            <ul class="tendencias-list">
+                <li><strong>Desarrollo Ágil:</strong> Métodos como Scrum y Kanban promueven la flexibilidad y la colaboración continua entre equipos.</li>
+                <li><strong>DevOps:</strong> Integración de desarrollo y operaciones para mejorar la eficiencia mediante automatización y colaboración.</li>
+                <li><strong>Inteligencia Artificial:</strong> Uso de IA para mejorar procesos de desarrollo como detección de errores y análisis de código.</li>
+                <!-- Añade los demás puntos aquí -->
+            </ul>
+            <p class="reference">
+                Fuente: <a href="https://www.ituser.es/it-trends/2023/08/principales-tendencias-tecnologicas-en-ingenieria-de-software-para-2024" target="_blank">IT Trends - Tendencias Tecnológicas en Ingeniería de Software para 2024</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/unidad1.js"></script>
+</body>
+</html>
